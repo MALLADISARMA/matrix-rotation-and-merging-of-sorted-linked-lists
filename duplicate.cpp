@@ -16,10 +16,15 @@ int main(){
         cout<<a[i]<<" ";
     }
     cout<<endl;
-    auto last=unique(a.begin(),a.end());
-    a.erase(last,a.end());
-    cout<<a.size()<<endl;
-    for(int i=0;i<a.size();i++){
+    cout<<endl;
+    sort(a.begin(),a.end());
+    for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
+    }
+    cout<<endl;
+    for(int i=0;i<n;i++){
+        if(a[i]==a[i+1]){
+            cout<<a[i]<<" ";
+        }
     }
 }
